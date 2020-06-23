@@ -1,0 +1,106 @@
+#app {
+  font-family: Avenir, '微軟正黑體', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  
+}
+
+html{
+  background-color: #42b983;
+  color: #34495e;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 15px; 
+  border-radius: 10% 10% 10% 10%;
+}
+
+#nav a.router-link-exact-active {
+  background-color: white;
+  color: #2c3e50;
+}
+
+.todoInput{
+  margin: 20px auto;
+}
+
+.todoInput input{
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  max-width: 600px;
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+.todoListItem{
+  position: relative;
+  background-color: white;
+  text-align: left;
+  width: 600px;
+  margin: 5px auto;
+  padding: 20px 10px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+/* .todoListItem .toggle{
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 10px;
+  border: none;
+  cursor: pointer;
+} */
+
+.todoListItem .toggle:checked + label {
+  color: #d9d5d9;
+  text-decoration: line-through;
+}
+
+.todoListItem label{
+  font-size: 20px;
+  word-break: break-all;
+  padding: 0px 15px 0px 60px;
+  height: 40px;
+  
+  line-height: 40px;
+  transition: color 0.4s;
+}
+
+.destroy{
+  color: red;
+  
+}
+
+.todoListItem .edit{
+  font-size: 20px;
+  text-align: left;
+  width: 90%;
+  word-break: break-all;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  outline: none;
+}
+
